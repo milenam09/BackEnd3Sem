@@ -1,0 +1,9 @@
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.csproj.AssemblyReference.cache
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.AssemblyInfoInputs.cache
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.AssemblyInfo.cs
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.csproj.CoreCompileInputs.cache
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\47269169802\Desktop\BackEnd3Sem\ConnectPlus\ConnectPlus\obj\Debug\net10.0\ConnectPlus.sourcelink.json
