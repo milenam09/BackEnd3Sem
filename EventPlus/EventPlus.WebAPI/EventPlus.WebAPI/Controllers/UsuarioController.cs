@@ -35,30 +35,32 @@ public class UsuarioController : ControllerBase
         }
     }
     /// <summary>
-    /// Endpoint da API que faz a chamada para o metodo de cadastrar um usuario
+    /// EndPoint da API que faz a chamada para o metodo cadastrar um usuario
     /// </summary>
     /// <param name="usuario">Usuario a ser cadastrado</param>
     /// <returns>Status Code 201 e o usuario cadastrado</returns>
     [HttpPost]
     public IActionResult Cadastrar(UsuarioDTO usuario)
     {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
         try
         {
             var novoUsuario = new Usuario
             {
                 Nome = usuario.Nome!,
-                Senha = usuario.Senha!,
                 Email = usuario.Email!,
-                IdTipoUsuario = usuario.IdTipoUsuario
+                Senha = usuario.Senha!,
             };
 
             _usuarioRepository.Cadastrar(novoUsuario);
 
             return StatusCode(201, novoUsuario);
         }
-        catch (Exception error)
+        catch (Exception erro)
         {
-            return BadRequest(error.Message);
+            return BadRequest(erro.Message);
         }
     }
 }

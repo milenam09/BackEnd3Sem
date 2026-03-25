@@ -59,7 +59,11 @@ public class UsuarioRepository : IUsuarioRepository
     /// <param name="usuario">Usuario a ser cadastrado</param>
     public void Cadastrar(Usuario usuario)
     {
+        if (_context.Usuarios.Any(u => u.Email == usuario.Email))
+            throw new Exception("Email já cadastrado!");
+
         usuario.Senha = Criptografia.GerarHash(usuario.Senha);
+
         _context.Usuarios.Add(usuario);
         _context.SaveChanges();
     }

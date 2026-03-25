@@ -1,3 +1,4 @@
+using Azure.AI.ContentSafety;
 using EventPlus.WebAPI.BdContextEvent;
 using EventPlus.WebAPI.Interfaces;
 using EventPlus.WebAPI.Repositories;
@@ -22,7 +23,18 @@ public partial class Program
         builder.Services.AddScoped<IInstituicaoRepository, InstituicaoRepository>();
         builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
         builder.Services.AddScoped<IEventoRepository, EventoRepository>();
+        builder.Services.AddScoped<IComentarioEventoRepository, ComentarioRepository>();
+        builder.Services.AddScoped<IPresencaRepository, PresencaRepository>();
         // Adiciona o Swagger
+
+        var endpoint = "";
+        var apiKey = "";
+
+        var cliente = new ContentSafetyClient(new Uri(endpoint), new Azure.AzureKeyCredential(apiKey));
+        builder.Services.AddSingleton(cliente);
+
+
+
 
         builder.Services.AddEndpointsApiExplorer();
 
